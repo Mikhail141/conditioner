@@ -110,13 +110,14 @@ class ConditionerTest {
         Conditioner conditioner = new Conditioner();
         conditioner.setMaxTemperature(45);
         conditioner.setMinTemperature(15);
-        int currentTemperature = 16;
+        int currentTemperature = 15;
         int expected = 15;
         conditioner.setCurrentTemperature(currentTemperature);
-        conditioner.decreaseCurrentTemperature();
         assertEquals(expected, conditioner.getCurrentTemperature());
     }
 }
+
+
 
 
 
